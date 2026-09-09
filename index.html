@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio — Digital Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Studio</a>
+      <nav class="nav">
+        <a href="#services" class="nav__link">Услуги</a>
+        <a href="#projects" class="nav__link">Проекты</a>
+        <a href="#team" class="nav__link">Команда</a>
+        <a href="#contact" class="nav__link">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__inner">
+      <h1 class="hero__title">Создаём цифровые<br>продукты, которые работают</h1>
+      <p class="hero__description">
+        Разрабатываем веб-сайты, приложения и бренды для бизнеса.
+        От идеи до запуска — берём на себя весь процесс.
+      </p>
+      <div class="hero__actions">
+        <a href="#" class="btn btn--primary js-open-modal">Начать проект</a>
+        <a href="#projects" class="btn btn--outline">Наши работы</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services fade-in">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Чем мы занимаемся</h2>
+        <p class="section-subtitle">Полный цикл создания цифровых продуктов — от стратегии до поддержки</p>
+      </div>
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M3 9h18"/>
+              <path d="M9 21V9"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Веб-разработка</h3>
+          <p class="service-card__description">Создаём быстрые и удобные сайты и веб-приложения любой сложности</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <circle cx="12" cy="12" r="4"/>
+              <line x1="21.17" y1="8" x2="12" y2="8"/>
+              <line x1="3.95" y1="6.06" x2="8.54" y2="14"/>
+              <line x1="10.88" y1="21.94" x2="15.46" y2="14"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Дизайн и брендинг</h3>
+          <p class="service-card__description">Разрабатываем айдентику, UI/UX и визуальный язык бренда</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Мобильные приложения</h3>
+          <p class="service-card__description">Нативные и кроссплатформенные приложения для iOS и Android</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Поддержка и рост</h3>
+          <p class="service-card__description">Мониторинг, оптимизация и развитие продукта после запуска</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects fade-in">
+    <div class="container">
+      <div class="projects__header">
+        <h2 class="section-title">Избранные проекты</h2>
+        <a href="#" class="projects__link">Все проекты</a>
+      </div>
+      <div class="tabs">
+        <button class="tabs__btn tabs__btn--active" data-filter="all">Все</button>
+        <button class="tabs__btn" data-filter="fintech">Fintech</button>
+        <button class="tabs__btn" data-filter="ecommerce">E-commerce</button>
+      </div>
+      <div class="projects__grid">
+        <div class="project-card" data-category="fintech">
+          <div class="project-card__preview"></div>
+          <div class="project-card__info">
+            <span class="project-card__tag">Fintech</span>
+            <h3 class="project-card__title">НеоБанк</h3>
+            <p class="project-card__description">Мобильное приложение для управления финансами и инвестициями</p>
+          </div>
+        </div>
+        <div class="project-card" data-category="ecommerce">
+          <div class="project-card__preview"></div>
+          <div class="project-card__info">
+            <span class="project-card__tag">E-commerce</span>
+            <h3 class="project-card__title">Маркетплейс «Поток»</h3>
+            <p class="project-card__description">Платформа для продажи цифровых товаров и подписок</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="cta fade-in">
+    <div class="container cta__inner">
+      <h2 class="cta__title">Готовы обсудить ваш проект?</h2>
+      <p class="cta__description">Расскажите о вашей идее — мы предложим решение и оценку сроков</p>
+      <button class="btn btn--white js-open-modal">Написать нам</button>
+    </div>
+  </section>
+
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <button class="modal__close" id="modal-close">&times;</button>
+      <h2 class="modal__title">Связаться с нами</h2>
+      <form class="modal__form">
+        <div class="form-group">
+          <label class="form-label" for="name">Имя</label>
+          <input class="form-input" type="text" id="name" placeholder="Ваше имя">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-input" type="email" id="email" placeholder="hello@example.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Сообщение</label>
+          <textarea class="form-input form-input--textarea" id="message" placeholder="Расскажите о вашем проекте" rows="4"></textarea>
+        </div>
+        <button class="btn btn--primary btn--full" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">
+    <svg class="toast__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+      <polyline points="22 4 12 14.01 9 11.01"/>
+    </svg>
+    <span class="toast__text">Заявка отправлена! Ответим в течение 15 минут.</span>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <span class="footer__logo">Studio</span>
+        <span class="footer__copy">&copy; 2026 Studio. Все права защищены.</span>
+      </div>
+      <div class="footer__right">
+        <a href="#" class="footer__link">GitHub</a>
+        <a href="#" class="footer__link">Telegram</a>
+        <a href="#" class="footer__link">Email</a>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
